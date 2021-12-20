@@ -1,0 +1,9 @@
+// mixin de transition
+@mixin mytrans ($duree : 5s, $effet : ease-in-out, ){
+    transition: $duree all $effet;
+}
+@mixin f-lexboox($just-cont : flex-start, $flexdir:column){
+    justify-content: $just-cont;
+    flex-direction:$flexdir;
+
+}

@@ -1,0 +1,65 @@
+.main-story{
+
+    .hero{
+        height: 100vh;
+        background: url(../img/Stocksy_comp_543118.jpg) center/cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    h1{
+        position: relative;
+        font-family: serif;
+        font-size: 100px;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: #fff;
+        transition: all ease-in-out 0.2s;
+        z-index: 1;
+    }
+    .main-content{
+        display: flex;
+        color: #000;
+        width: 80%;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        p{
+            padding-bottom: 20px;
+            line-height: 1.5;
+        }
+        div:nth-of-type(odd){
+            text-align: center;
+            width: 33%;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            h2{
+                font-size: 16px;
+                letter-spacing: 0;
+                font-weight: 700;
+            }
+        }
+        .main-innovating{
+            width: 40%;
+            p{
+                line-height: 3;
+            }
+            h2{
+                text-transform: uppercase;
+                text-align: center;
+            }
+        }
+    }
+    .dine{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 40px 10%;
+        padding-bottom: 200px;
+        border-bottom: 1px solid #dedede;
+    }
+
+}

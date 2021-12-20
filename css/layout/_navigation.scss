@@ -1,0 +1,32 @@
+.main-nav{
+    display: flex;
+    width: 450px;
+    justify-content: space-between;
+    font-weight: bold;
+    a{
+        font-size: 18px;
+        &:hover{
+            color: #ff9061;    
+        }
+    }
+    div:first-child{
+        display: flex;
+        width: 80%;
+        justify-content: space-around;
+    }
+    div:last-child{
+        width: 15%;
+        display: flex;
+        justify-content: space-evenly;
+        a:hover{
+            color: #fff;
+        }
+        &:hover a:not(:hover){
+            color: #666;
+        }         
+    }
+    .active{
+        color: #ff9061;
+    } 
+
+}

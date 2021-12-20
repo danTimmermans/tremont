@@ -1,0 +1,77 @@
+.main-home{
+    position: relative;
+    background: url(../img/Stocksy_comp_461838.jpg) center/cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    p{
+        position: relative;
+        z-index: 1;
+        animation: fadeIn 1.5s;
+    }
+    a{
+        position: relative;
+        z-index: 1;
+        animation: fadeIn 1.5s;
+        &:hover{
+            border-bottom: 1px solid #fff;
+        }
+    }
+    .main-txt{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #fff;
+        .link{
+            width: 50%;
+            display: flex;
+            justify-content: space-between;
+            div:before{
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                transition:all ease-in-out 0.2s;
+            }
+            .eat:hover:before{
+                opacity: 1;
+            }
+            .drink:hover:before{
+                opacity: 1;
+            }
+            .visit:hover:before{
+                opacity: 1;
+            }
+            .eat:before{
+                background: url(../../img/Stocksy_comp_461841-color.jpg) center/cover;
+                opacity: 0;
+            }
+            .drink:before{
+                background:url(../../img/Stocksy_comp_486556.jpg) center/cover;
+                opacity: 0;
+            }
+            .visit:before{
+                background: url(../../img/Stocksy_comp_821143-crop.jpg) center/cover;
+                opacity: 0;
+            }
+        }
+        
+    }
+    &:after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.3);
+    }   
+}
